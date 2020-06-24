@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lJp-qb-tNj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horror Movies-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HorrorMovieViewController" customModule="Homework48" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-LX-9mT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="horror_movie_cell" rowHeight="586" id="HrS-G1-5vD" customClass="HorrorMovieCell" customModule="Homework48" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="586"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HrS-G1-5vD" id="drp-Uc-nO8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="586"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MRK-pA-Ub3">
+                                                    <rect key="frame" x="59.5" y="21" width="295" height="415"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="415" id="Gtx-wL-Klj"/>
+                                                        <constraint firstAttribute="width" constant="295" id="xWE-V9-fvw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLz-IP-oWK">
+                                                    <rect key="frame" x="20" y="456" width="374" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="nBd-qL-kBP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hb-Qc-b75">
+                                                    <rect key="frame" x="20" y="491.5" width="374" height="73.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uLz-IP-oWK" firstAttribute="leading" secondItem="drp-Uc-nO8" secondAttribute="leadingMargin" id="5Nb-yN-dbA"/>
+                                                <constraint firstItem="MRK-pA-Ub3" firstAttribute="centerX" secondItem="drp-Uc-nO8" secondAttribute="centerX" id="80N-L3-fVd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5hb-Qc-b75" secondAttribute="bottom" constant="10" id="ByF-wJ-aca"/>
+                                                <constraint firstItem="5hb-Qc-b75" firstAttribute="top" secondItem="uLz-IP-oWK" secondAttribute="bottom" constant="15" id="Ck8-6M-1zj"/>
+                                                <constraint firstItem="uLz-IP-oWK" firstAttribute="trailing" secondItem="drp-Uc-nO8" secondAttribute="trailingMargin" id="ZZ8-Tm-GIz"/>
+                                                <constraint firstItem="5hb-Qc-b75" firstAttribute="trailing" secondItem="drp-Uc-nO8" secondAttribute="trailingMargin" id="lUY-sE-L0h"/>
+                                                <constraint firstItem="5hb-Qc-b75" firstAttribute="leading" secondItem="drp-Uc-nO8" secondAttribute="leadingMargin" id="tJa-BS-OuF"/>
+                                                <constraint firstItem="MRK-pA-Ub3" firstAttribute="top" secondItem="drp-Uc-nO8" secondAttribute="topMargin" constant="10" id="w61-lP-Rpy"/>
+                                                <constraint firstItem="uLz-IP-oWK" firstAttribute="top" secondItem="MRK-pA-Ub3" secondAttribute="bottom" constant="20" id="xQg-Cf-byo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="horrorMovieImageView" destination="MRK-pA-Ub3" id="t63-Y3-MGq"/>
+                                            <outlet property="horrorMovieStorylineLabel" destination="5hb-Qc-b75" id="RKB-LC-IJ1"/>
+                                            <outlet property="horrorMovieTitleLabel" destination="uLz-IP-oWK" id="Yyf-ev-GIe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rxP-LX-9mT" secondAttribute="bottom" id="Nrl-WC-Cqk"/>
+                            <constraint firstItem="rxP-LX-9mT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TFK-Nv-gfC"/>
+                            <constraint firstItem="rxP-LX-9mT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VOZ-HS-FLe"/>
+                            <constraint firstItem="rxP-LX-9mT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xmi-qI-wRC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Horror Movies" id="DRW-cQ-BhW"/>
+                    <connections>
+                        <outlet property="tableView" destination="rxP-LX-9mT" id="zqU-XX-9aV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZwM-d2-8Uk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lJp-qb-tNj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IIj-RH-3pe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ru2-hf-IuK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIM-8c-Uim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
