@@ -35,6 +35,8 @@ class HorrorMovieViewController: UIViewController {
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 280.0
+        
+        //tableView.isPagingEnabled = true
     }
     
 }
@@ -63,6 +65,10 @@ extension HorrorMovieViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //tableView.scrollToNearestSelectedRow(at: .top, animated: true)
     }
     
     
